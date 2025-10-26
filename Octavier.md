@@ -3,10 +3,6 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 public class Octavier {
 
-
-
-
-
 // The entire application is contained within this main class
       // ====== COLOR CONSTANTS (Must be static members of the class) ======
       // ANSI escape codes for coloring the console output.
