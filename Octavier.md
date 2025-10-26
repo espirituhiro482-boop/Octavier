@@ -1,8 +1,8 @@
-import java.util.InputMismatchException;
-import java.util.Scanner;
-public class Octavier {
-
-// The entire application is contained within this main class
+       import java.util.InputMismatchException;
+       import java.util.Scanner;
+       public class Octavier {
+       
+      // The entire application is contained within this main class
       // ====== COLOR CONSTANTS (Must be static members of the class) ======
       // ANSI escape codes for coloring the console output.
       public static final String Reset = "\033[0m";
@@ -13,7 +13,7 @@ public class Octavier {
       public static final String White = "\033[37m";
       public static final String Green = "\033[32m";
       public static final String Red = "\033[31m";
-
+      
       // Static Scanner for reading user input throughout the application.
       private static final Scanner sc = new Scanner(System.in);
       
