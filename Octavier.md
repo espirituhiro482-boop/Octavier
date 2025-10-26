@@ -36,7 +36,7 @@ public class Octavier {
           System.out.print("\033[H\033[2J");
           System.out.flush();
       }
-
+      
       
       // ====== BIG WELCOME LOGO ======
       private static void bigWelcomeLogo() throws InterruptedException {
