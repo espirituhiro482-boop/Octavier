@@ -43,7 +43,7 @@
           
           System.out.println(Pink);
           System.out.println("     ╔════════════════════════════════════════════════════════════════╗");
-          System.out.println("     ║                   😍 W E L C O M E 😍                                     ║");
+          System.out.println("     ║                   😍 W E L C O M E 😍                         ║");
           System.out.println("     ╚════════════════════════════════════════════════════════════════╝");
           Thread.sleep(600);
           System.out.println(Purple); 
@@ -86,13 +86,13 @@
           clearScreen();
           System.out.println(Pink);
           System.out.println("    ╔═══════════════════════════════════════════════╗ ");
-          System.out.println("    ║             ✨ M A I N  M E N U ✨                    ║ ");
+          System.out.println("    ║             ✨ M A I N  M E N U ✨           ║ ");
           System.out.println("    ╠═══════════════════════════════════════════════╣ ");
-          System.out.println("    ║                                                       ║ ");
-          System.out.println("    ║              [1] 🤡 Start                             ║ ");
-          System.out.println("    ║              [2] 🤫 About Us                          ║ ");
-          System.out.println("    ║              [3] 😷 Exit                              ║ ");
-          System.out.println("    ║                                                       ║ ");
+          System.out.println("    ║                                               ║ ");
+          System.out.println("    ║              [1] 🤡 Start                    ║ ");
+          System.out.println("    ║              [2] 🤫 About Us                  ║ ");
+          System.out.println("    ║              [3] 😷 Exit                      ║ ");
+          System.out.println("    ║                                               ║ ");
           System.out.println("    ╚═══════════════════════════════════════════════╝ " + Reset);
       
           // Main menu selection loop
@@ -132,14 +132,14 @@
               clearScreen();
               System.out.println(Cyan);
               System.out.println("   ╔═══════════════════════════════════════════════════╗");
-              System.out.println("   ║         🥳 Welcome to the Start Menu! 🥳                   ║");
+              System.out.println("   ║         🥳 Welcome to the Start Menu! 🥳         ║");
               System.out.println("   ╠═══════════════════════════════════════════════════╣");
-              System.out.println("   ║                                                            ║");
-              System.out.println("   ║              [1] 🧪 Calculator                             ║");
-              System.out.println("   ║              [2] 📏 Area & Circumference                   ║");
-              System.out.println("   ║              [3] 🔄 Unit Converter                         ║");
-              System.out.println("   ║              [4] ⏪ Back to Main Menu                      ║");
-              System.out.println("   ║                                                            ║");
+              System.out.println("   ║                                                   ║");
+              System.out.println("   ║              [1] 🧪 Calculator                   ║");
+              System.out.println("   ║              [2] 📏 Area & Circumference         ║");
+              System.out.println("   ║              [3] 🔄 Unit Converter               ║");
+              System.out.println("   ║              [4] ⏪ Back to Main Menu            ║");
+              System.out.println("   ║                                                   ║");
               System.out.println("   ╚═══════════════════════════════════════════════════╝" + Reset);
           
               System.out.print("\n" + Pink + "♡ Choose an option: " + Reset);
@@ -289,7 +289,7 @@
           clearScreen();
           System.out.println(Purple);
           System.out.println("  ╔═══════════════════════════════════╗");
-          System.out.println("  ║           ❗ABOUT US❗                  ║");
+          System.out.println("  ║           ❗ABOUT US❗           ║");
           System.out.println("  ╚═══════════════════════════════════╝" + Reset);
           // **Fix**: Correctly printed the color constants instead of string literals.
           System.out.println(Cyan);
@@ -309,7 +309,7 @@
         clearScreen();
           System.out.println(Pink);
           System.out.println(" ╔════════════════════════════════════════════════════════════╗");
-          System.out.println(" ║                     🤩 T H A N K  Y O U 🤩                            ║");
+          System.out.println(" ║                     🤩 T H A N K  Y O U 🤩                ║");
           System.out.println(" ╚════════════════════════════════════════════════════════════╝");
           System.out.println(Cyan);
           System.out.println(" ████████╗██╗░░██╗░█████╗░███╗░░██╗██╗░░██╗  ██╗░░░██╗░█████╗░██╗░░░██╗ ");
