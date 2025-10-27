@@ -137,7 +137,7 @@
               System.out.println("   ║                                                   ║");
               System.out.println("   ║              [1] 🧪 Calculator                   ║");
               System.out.println("   ║              [2] 📏 Area & Circumference         ║");
-              System.out.println("   ║              [3] 🔄 Unit Converter               ║");
+              System.out.println("   ║              [3] 🪱 Mm, Cm, M                    ║");
               System.out.println("   ║              [4] ⏪ Back to Main Menu            ║");
               System.out.println("   ║                                                   ║");
               System.out.println("   ╚═══════════════════════════════════════════════════╝" + Reset);
@@ -249,7 +249,8 @@
               }
               
               System.out.print(Yellow + "\nPress [R] to calculate again, or [B] to go back: " + Reset);
-              
+              }
+              }
         // ====== Mm, Cm, M ======
     private static void unitconvert() throws InterruptedException {
     boolean inConverter = true;
