@@ -251,26 +251,35 @@
               System.out.print(Yellow + "\nPress [R] to calculate again, or [B] to go back: " + Reset);
               }
               }
-        // ====== Mm, Cm, M ======
+        
+    // ====== Mm, Cm, M ======
     private static void unitconvert() throws InterruptedException {
     boolean inConverter = true;
     while (inConverter) {
         clearScreen();
         System.out.print("ENTER VALUE IN MILLIMETERS (mm): ");
-        double mm = sc.nextDouble();
+        // Note: You should handle InputMismatchException for sc.nextDouble()
+        double mm = sc.nextDouble(); 
         double cm = mm / 10;
         double m = mm / 1000;
+        
         System.out.println(mm + " mm = " + cm + " cm = " + m + " m");
-        System.out.print("Convert another value? (Y/N): ");
+        
+        // Revised prompt to reflect the 'N' option
+        System.out.print("Convert another value? (Y/N - Back to Menu): ");
         String choice = sc.next();
+        
         if (choice.equalsIgnoreCase("N")) {
-            inConverter = false;
-            System.out.println("Exiting Unit Converter...");
-            Thread.sleep(1000);
-              }
-          }
-      }
-
+            // Setting this to false stops the while loop.
+            // When the loop stops, the method exits and returns to the calling method (your main menu).
+            inConverter = false; 
+            System.out.println("Returning to Main Menu...");
+            Thread.sleep(1000); // You can remove this if you don't need a delay
+        } 
+        // If the user enters 'Y' or any other input, the 'while' loop continues.
+    }
+        
+    }
       // ====== ABOUT US ======
       private static void aboutUs() throws InterruptedException {
           clearScreen();
