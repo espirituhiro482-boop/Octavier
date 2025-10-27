@@ -249,37 +249,23 @@
               }
               
               System.out.print(Yellow + "\nPress [R] to calculate again, or [B] to go back: " + Reset);
-              String choice = sc.nextLine().trim().toLowerCase();
-              if (choice.equals("b")) {
-                  inAreaCircum = false;
-              }
-          }
-      }
-
-      // ====== UNIT CONVERTER FEATURE (unitconvert) ======
-      private static void unitconvert() throws InterruptedException {
-          boolean inConverter = true;
-          while(inConverter) {
-              clearScreen();
-              System.out.println(Purple + "\n-- 🔄 Unit Converter (Celsius to Fahrenheit) --" + Reset);
-              try {
-                  System.out.print("Enter temperature in Celsius (C): ");
-                  double celsius = Double.parseDouble(sc.nextLine());
-
-                  // Formula: (C * 9/5) + 32
-                  double fahrenheit = (celsius * 9/5) + 32;
-
-                  System.out.println(Green + "\nConversion Result:" + Reset);
-                  System.out.printf(Cyan + "%.2f C is equal to %.2f F%n" + Reset, celsius, fahrenheit);
-
-              } catch (NumberFormatException e) {
-                  System.out.println(Red + "Error: Invalid input. Please enter a valid number for Celsius." + Reset);
-              }
               
-              System.out.print(Yellow + "\nPress [R] to convert again, or [B] to go back: " + Reset);
-              String choice = sc.nextLine().trim().toLowerCase();
-              if (choice.equals("b")) {
-                  inConverter = false;
+        // ====== Mm, Cm, M ======
+    private static void unitconvert() throws InterruptedException {
+    boolean inConverter = true;
+    while (inConverter) {
+        clearScreen();
+        System.out.print("ENTER VALUE IN MILLIMETERS (mm): ");
+        double mm = sc.nextDouble();
+        double cm = mm / 10;
+        double m = mm / 1000;
+        System.out.println(mm + " mm = " + cm + " cm = " + m + " m");
+        System.out.print("Convert another value? (Y/N): ");
+        String choice = sc.next();
+        if (choice.equalsIgnoreCase("N")) {
+            inConverter = false;
+            System.out.println("Exiting Unit Converter...");
+            Thread.sleep(1000);
               }
           }
       }
