@@ -223,34 +223,39 @@
 
       // ====== AREA & CIRCUMFERENCE FEATURE (areacircum) ======
       private static void areacircum() throws InterruptedException {
-          boolean inAreaCircum = true;
-          while(inAreaCircum) {
-              clearScreen();
-              System.out.println(Purple + "\n-- 📏 Circle Area & Circumference --" + Reset);
-              try {
-                  System.out.print("Enter the radius of the circle: ");
-                  double radius = Double.parseDouble(sc.nextLine());
+      boolean inAreaCircum = true;
+      while(inAreaCircum) {
+          clearScreen();
+          System.out.println(Purple + "\n-- 📏 Area & Circumference --" + Reset);
+          try {
+              System.out.print("Enter the radius of the circle: ");
+              double radius = Double.parseDouble(sc.nextLine());
 
-                  if (radius < 0) {
-                      System.out.println(Red + "Error: Radius cannot be negative." + Reset);
-                      Thread.sleep(1500);
-                      continue;
-                  }
-
-                  double area = Math.PI * radius * radius;
-                  double circumference = 2 * Math.PI * radius;
-
-                  System.out.println(Green + "\nResults (for radius " + radius + "):" + Reset);
-                  System.out.printf(Cyan + "  - Area: %.2f%n" + Reset, area);
-                  System.out.printf(Cyan + "  - Circumference: %.2f%n" + Reset, circumference);
-
-              } catch (NumberFormatException e) {
-                  System.out.println(Red + "Error: Invalid input. Please enter a valid number for the radius." + Reset);
+              if (radius < 0) {
+                  System.out.println(Red + "Error: Radius cannot be negative." + Reset);
+                  Thread.sleep(1500);
+                  continue;
               }
-              
-              System.out.print(Yellow + "\nPress [R] to calculate again, or [B] to go back: " + Reset);
-              }
-              }
+
+              double area = Math.PI * radius * radius;
+              double circumference = 2 * Math.PI * radius;
+
+              System.out.println(Green + "\nResults (for radius " + radius + "):" + Reset);
+              System.out.printf(Cyan + "  - Area: %.2f%n" + Reset, area);
+              System.out.printf(Cyan + "  - Circumference: %.2f%n" + Reset, circumference);
+
+          } catch (NumberFormatException e) {
+              System.out.println(Red + "Error: Invalid input. Please enter a valid number for the radius." + Reset);
+          }
+          
+          System.out.print(Yellow + "\nPress [R] to calculate again, or [B] to go back: " + Reset);
+          String choice = sc.nextLine().trim().toLowerCase();
+          if (choice.equals("b")) {
+              inAreaCircum = false;
+         }
+
+       }
+   }
         
     // ====== Mm, Cm, M ======
     private static void unitconvert() throws InterruptedException {
